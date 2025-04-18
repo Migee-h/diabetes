@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zfy.diabetes.mapper.DailyLifeRecordMapper">
+
+    <resultMap type="com.zfy.diabetes.domain.DailyLifeRecord" id="DailyLifeRecordResult">
+        <result property="recordId"    column="record_id"    />
+        <result property="patientId"    column="patient_id"    />
+        <result property="recordDate"    column="record_date"    />
+        <result property="exerciseRecord"    column="exercise_record"    />
+        <result property="dietRecord"    column="diet_record"    />
+        <result property="oralMedicationRecord"    column="oral_medication_record"    />
+        <result property="insulinRecord"    column="insulin_record"    />
+        <result property="bloodSugarRecord"    column="blood_sugar_record"    />
+        <result property="createdBy"    column="created_by"    />
+        <result property="createTime"    column="create_time"    />
+    </resultMap>
+
+    <sql id="selectDailyLifeRecordVo">
+        select record_id, patient_id, record_date, exercise_record, diet_record, oral_medication_record, insulin_record, blood_sugar_record, created_by, create_time from daily_life_record
+    </sql>
+
+    <select id="selectDailyLifeRecordList" parameterType="com.zfy.diabetes.domain.DailyLifeRecord" resultMap="DailyLifeRecordResult">
+        <include refid="selectDailyLifeRecordVo"/>
+        <where>
+            <if test="patientId != null "> and patient_id = #{patientId}</if>
+            <if test="recordDate != null "> and record_date = #{recordDate}</if>
+            <if test="exerciseRecord != null  and exerciseRecord != ''"> and exercise_record = #{exerciseRecord}</if>
+            <if test="dietRecord != null  and dietRecord != ''"> and diet_record = #{dietRecord}</if>
+            <if test="oralMedicationRecord != null  and oralMedicationRecord != ''"> and oral_medication_record = #{oralMedicationRecord}</if>
+            <if test="insulinRecord != null  and insulinRecord != ''"> and insulin_record = #{insulinRecord}</if>
+            <if test="bloodSugarRecord != null  and bloodSugarRecord != ''"> and blood_sugar_record = #{bloodSugarRecord}</if>
+            <if test="createdBy != null  and createdBy != ''"> and created_by = #{createdBy}</if>
+        </where>
+    </select>
+
+    <select id="selectDailyLifeRecordByRecordId" parameterType="Long" resultMap="DailyLifeRecordResult">
+        <include refid="selectDailyLifeRecordVo"/>
+        where record_id = #{recordId}
+    </select>
+
+    <insert id="insertDailyLifeRecord" parameterType="com.zfy.diabetes.domain.DailyLifeRecord" useGeneratedKeys="true" keyProperty="recordId">
+        insert into daily_life_record
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="patientId != null">patient_id,</if>
+            <if test="recordDate != null">record_date,</if>
+            <if test="exerciseRecord != null">exercise_record,</if>
+            <if test="dietRecord != null">diet_record,</if>
+            <if test="oralMedicationRecord != null">oral_medication_record,</if>
+            <if test="insulinRecord != null">insulin_record,</if>
+            <if test="bloodSugarRecord != null">blood_sugar_record,</if>
+            <if test="createdBy != null and createdBy != ''">created_by,</if>
+            <if test="createTime != null">create_time,</if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="patientId != null">#{patientId},</if>
+            <if test="recordDate != null">#{recordDate},</if>
+            <if test="exerciseRecord != null">#{exerciseRecord},</if>
+            <if test="dietRecord != null">#{dietRecord},</if>
+            <if test="oralMedicationRecord != null">#{oralMedicationRecord},</if>
+            <if test="insulinRecord != null">#{insulinRecord},</if>
+            <if test="bloodSugarRecord != null">#{bloodSugarRecord},</if>
+            <if test="createdBy != null and createdBy != ''">#{createdBy},</if>
+            <if test="createTime != null">#{createTime},</if>
+        </trim>
+    </insert>
+
+    <update id="updateDailyLifeRecord" parameterType="com.zfy.diabetes.domain.DailyLifeRecord">
+        update daily_life_record
+        <trim prefix="SET" suffixOverrides=",">
+            <if test="patientId != null">patient_id = #{patientId},</if>
+            <if test="recordDate != null">record_date = #{recordDate},</if>
+            <if test="exerciseRecord != null">exercise_record = #{exerciseRecord},</if>
+            <if test="dietRecord != null">diet_record = #{dietRecord},</if>
+            <if test="oralMedicationRecord != null">oral_medication_record = #{oralMedicationRecord},</if>
+            <if test="insulinRecord != null">insulin_record = #{insulinRecord},</if>
+            <if test="bloodSugarRecord != null">blood_sugar_record = #{bloodSugarRecord},</if>
+            <if test="createdBy != null and createdBy != ''">created_by = #{createdBy},</if>
+            <if test="createTime != null">create_time = #{createTime},</if>
+        </trim>
+        where record_id = #{recordId}
+    </update>
+
+    <delete id="deleteDailyLifeRecordByRecordId" parameterType="Long">
+        delete from daily_life_record where record_id = #{recordId}
+    </delete>
+
+    <delete id="deleteDailyLifeRecordByRecordIds" parameterType="String">
+        delete from daily_life_record where record_id in
+        <foreach item="recordId" collection="array" open="(" separator="," close=")">
+            #{recordId}
+        </foreach>
+    </delete>
+
+</mapper>

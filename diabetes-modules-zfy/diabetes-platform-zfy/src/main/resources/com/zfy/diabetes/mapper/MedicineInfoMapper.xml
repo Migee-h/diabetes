@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zfy.diabetes.mapper.MedicineInfoMapper">
+
+
+    <resultMap type="com.zfy.diabetes.domain.MedicineInfo" id="MedicineInfoResult">
+        <result property="medicineId"    column="medicine_id"    />
+        <result property="medicineName"    column="medicine_name"    />
+        <result property="category"    column="category"    />
+        <result property="dosage"    column="dosage"    />
+        <result property="usage"    column="usage"    />
+        <result property="sideEffects"    column="side_effects"    />
+        <result property="manufacturer"    column="manufacturer"    />
+        <result property="expirationDate"    column="expiration_date"    />
+        <result property="composition"    column="composition"    />
+        <result property="createdAt"    column="created_at"    />
+        <result property="updatedAt"    column="updated_at"    />
+        <result property="remark"    column="remark"    />
+    </resultMap>
+
+    <sql id="selectMedicineInfoVo">
+        select medicine_id, medicine_name, category, dosage, `usage`, side_effects, manufacturer, expiration_date, composition, created_at, updated_at, remark from medicine_info
+    </sql>
+
+    <select id="selectMedicineInfoList" parameterType="com.zfy.diabetes.domain.MedicineInfo" resultMap="MedicineInfoResult">
+        <include refid="selectMedicineInfoVo"/>
+        <where>
+            <if test="medicineName != null  and medicineName != ''"> and medicine_name like concat('%', #{medicineName}, '%')</if>
+            <if test="category != null  and category != ''"> and category = #{category}</if>
+            <if test="dosage != null  and dosage != ''"> and dosage = #{dosage}</if>
+            <if test="usage != null  and usage != ''"> and usage = #{usage}</if>
+            <if test="sideEffects != null  and sideEffects != ''"> and side_effects = #{sideEffects}</if>
+            <if test="manufacturer != null  and manufacturer != ''"> and manufacturer = #{manufacturer}</if>
+            <if test="expirationDate != null "> and expiration_date = #{expirationDate}</if>
+            <if test="composition != null  and composition != ''"> and composition = #{composition}</if>
+            <if test="createdAt != null "> and created_at = #{createdAt}</if>
+            <if test="updatedAt != null "> and updated_at = #{updatedAt}</if>
+        </where>
+    </select>
+
+    <select id="selectMedicineInfoByMedicineId" parameterType="Long" resultMap="MedicineInfoResult">
+        <include refid="selectMedicineInfoVo"/>
+        where medicine_id = #{medicineId}
+    </select>
+
+    <insert id="insertMedicineInfo" parameterType="com.zfy.diabetes.domain.MedicineInfo" useGeneratedKeys="true" keyProperty="medicineId">
+        insert into medicine_info
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="medicineName != null and medicineName != ''">medicine_name,</if>
+            <if test="category != null and category != ''">category,</if>
+            <if test="dosage != null and dosage != ''">dosage,</if>
+            <if test="usage != null">usage,</if>
+            <if test="sideEffects != null">side_effects,</if>
+            <if test="manufacturer != null">manufacturer,</if>
+            <if test="expirationDate != null">expiration_date,</if>
+            <if test="composition != null">composition,</if>
+            <if test="createdAt != null">created_at,</if>
+            <if test="updatedAt != null">updated_at,</if>
+            <if test="remark != null">remark,</if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="medicineName != null and medicineName != ''">#{medicineName},</if>
+            <if test="category != null and category != ''">#{category},</if>
+            <if test="dosage != null and dosage != ''">#{dosage},</if>
+            <if test="usage != null">#{usage},</if>
+            <if test="sideEffects != null">#{sideEffects},</if>
+            <if test="manufacturer != null">#{manufacturer},</if>
+            <if test="expirationDate != null">#{expirationDate},</if>
+            <if test="composition != null">#{composition},</if>
+            <if test="createdAt != null">#{createdAt},</if>
+            <if test="updatedAt != null">#{updatedAt},</if>
+            <if test="remark != null">#{remark},</if>
+        </trim>
+    </insert>
+
+    <update id="updateMedicineInfo" parameterType="com.zfy.diabetes.domain.MedicineInfo">
+        update medicine_info
+        <trim prefix="SET" suffixOverrides=",">
+            <if test="medicineName != null and medicineName != ''">medicine_name = #{medicineName},</if>
+            <if test="category != null and category != ''">category = #{category},</if>
+            <if test="dosage != null and dosage != ''">dosage = #{dosage},</if>
+            <if test="usage != null">`usage` = #{usage},</if>
+            <if test="sideEffects != null">side_effects = #{sideEffects},</if>
+            <if test="manufacturer != null">manufacturer = #{manufacturer},</if>
+            <if test="expirationDate != null">expiration_date = #{expirationDate},</if>
+            <if test="composition != null">composition = #{composition},</if>
+            <if test="createdAt != null">created_at = #{createdAt},</if>
+            <if test="updatedAt != null">updated_at = #{updatedAt},</if>
+            <if test="remark != null">remark = #{remark},</if>
+        </trim>
+        where medicine_id = #{medicineId}
+    </update>
+
+    <delete id="deleteMedicineInfoByMedicineId" parameterType="Long">
+        delete from medicine_info where medicine_id = #{medicineId}
+    </delete>
+
+    <delete id="deleteMedicineInfoByMedicineIds" parameterType="String">
+        delete from medicine_info where medicine_id in
+        <foreach item="medicineId" collection="array" open="(" separator="," close=")">
+            #{medicineId}
+        </foreach>
+    </delete>
+</mapper>

@@ -1,0 +1,413 @@
+14:34:48.234 [main] INFO  c.a.n.c.e.SearchableProperties - [sortPropertySourceDefaultOrder,197] - properties search order:PROPERTIES->JVM->ENV->DEFAULT_SETTING
+14:34:48.335 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.2.5.Final
+14:34:49.260 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [init,56] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+14:34:49.261 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [init,56] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+14:34:50.858 [main] INFO  c.z.d.DiabetesPlatformApplication - [logStartupProfileInfo,638] - The following 1 profile is active: "dev"
+14:34:53.576 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-9310"]
+14:34:53.580 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+14:34:53.580 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.102]
+14:34:53.866 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+14:34:55.088 [main] INFO  c.a.d.p.DruidDataSource - [init,1002] - {dataSource-1,master} inited
+14:34:55.091 [main] INFO  c.b.d.d.DynamicRoutingDataSource - [addDataSource,158] - dynamic-datasource - add a datasource named [master] success
+14:34:55.092 [main] INFO  c.b.d.d.DynamicRoutingDataSource - [afterPropertiesSet,241] - dynamic-datasource initial loaded [1] datasource,primary datasource named [master]
+14:34:57.185 [main] INFO  c.a.c.s.SentinelWebMvcConfigurer - [addInterceptors,52] - [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+14:35:01.001 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-9310"]
+14:35:01.084 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [init,56] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+14:35:01.085 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [init,56] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+14:35:01.246 [main] INFO  c.a.c.n.r.NacosServiceRegistry - [register,76] - nacos registry, DEFAULT_GROUP diabetes-platform-zfy 192.168.31.113:9310 register finished
+14:35:01.443 [main] INFO  c.z.d.DiabetesPlatformApplication - [logStarted,61] - Started DiabetesPlatformApplication in 13.804 seconds (JVM running for 15.425)
+14:35:01.486 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,141] - [Nacos Config] Listening config: dataId=diabetes-platform-zfy-dev.yml, group=DEFAULT_GROUP
+14:35:01.488 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,141] - [Nacos Config] Listening config: dataId=diabetes-platform-zfy.yml, group=DEFAULT_GROUP
+14:35:01.488 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,141] - [Nacos Config] Listening config: dataId=diabetes-platform-zfy, group=DEFAULT_GROUP
+14:35:08.230 [http-nio-9310-exec-1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+15:31:00.728 [SpringApplicationShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,95] - De-registering from Nacos Server now...
+15:31:00.735 [SpringApplicationShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,115] - De-registration finished.
+15:31:00.769 [SpringApplicationShutdownHook] INFO  c.b.d.d.DynamicRoutingDataSource - [destroy,215] - dynamic-datasource start closing ....
+15:31:00.788 [SpringApplicationShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2204] - {dataSource-1} closing ...
+15:31:00.815 [SpringApplicationShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2277] - {dataSource-1} closed
+15:31:00.816 [SpringApplicationShutdownHook] INFO  c.b.d.d.d.DefaultDataSourceDestroyer - [destroy,98] - dynamic-datasource close the datasource named [master] success,
+15:31:00.816 [SpringApplicationShutdownHook] INFO  c.b.d.d.DynamicRoutingDataSource - [destroy,219] - dynamic-datasource all closed success,bye
+15:31:40.843 [main] INFO  c.a.n.c.e.SearchableProperties - [sortPropertySourceDefaultOrder,197] - properties search order:PROPERTIES->JVM->ENV->DEFAULT_SETTING
+15:31:40.930 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.2.5.Final
+15:31:41.831 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [init,56] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+15:31:41.831 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [init,56] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+15:31:43.598 [main] INFO  c.z.d.DiabetesPlatformApplication - [logStartupProfileInfo,638] - The following 1 profile is active: "dev"
+15:31:46.005 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-9310"]
+15:31:46.008 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+15:31:46.008 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.102]
+15:31:46.351 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+15:31:47.735 [main] INFO  c.a.d.p.DruidDataSource - [init,1002] - {dataSource-1,master} inited
+15:31:47.738 [main] INFO  c.b.d.d.DynamicRoutingDataSource - [addDataSource,158] - dynamic-datasource - add a datasource named [master] success
+15:31:47.738 [main] INFO  c.b.d.d.DynamicRoutingDataSource - [afterPropertiesSet,241] - dynamic-datasource initial loaded [1] datasource,primary datasource named [master]
+15:31:49.643 [main] INFO  c.a.c.s.SentinelWebMvcConfigurer - [addInterceptors,52] - [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+15:31:53.549 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-9310"]
+15:31:53.605 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [init,56] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+15:31:53.605 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [init,56] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+15:31:53.767 [main] INFO  c.a.c.n.r.NacosServiceRegistry - [register,76] - nacos registry, DEFAULT_GROUP diabetes-platform-zfy 192.168.31.113:9310 register finished
+15:31:53.919 [main] INFO  c.z.d.DiabetesPlatformApplication - [logStarted,61] - Started DiabetesPlatformApplication in 13.569 seconds (JVM running for 15.147)
+15:31:53.957 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,141] - [Nacos Config] Listening config: dataId=diabetes-platform-zfy-dev.yml, group=DEFAULT_GROUP
+15:31:53.959 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,141] - [Nacos Config] Listening config: dataId=diabetes-platform-zfy.yml, group=DEFAULT_GROUP
+15:31:53.960 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,141] - [Nacos Config] Listening config: dataId=diabetes-platform-zfy, group=DEFAULT_GROUP
+15:32:07.385 [http-nio-9310-exec-1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+15:38:52.660 [SpringApplicationShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,95] - De-registering from Nacos Server now...
+15:38:52.663 [SpringApplicationShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,115] - De-registration finished.
+15:38:52.682 [SpringApplicationShutdownHook] INFO  c.b.d.d.DynamicRoutingDataSource - [destroy,215] - dynamic-datasource start closing ....
+15:38:52.690 [SpringApplicationShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2204] - {dataSource-1} closing ...
+15:38:52.704 [SpringApplicationShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2277] - {dataSource-1} closed
+15:38:52.704 [SpringApplicationShutdownHook] INFO  c.b.d.d.d.DefaultDataSourceDestroyer - [destroy,98] - dynamic-datasource close the datasource named [master] success,
+15:38:52.705 [SpringApplicationShutdownHook] INFO  c.b.d.d.DynamicRoutingDataSource - [destroy,219] - dynamic-datasource all closed success,bye
+15:38:58.828 [main] INFO  c.a.n.c.e.SearchableProperties - [sortPropertySourceDefaultOrder,197] - properties search order:PROPERTIES->JVM->ENV->DEFAULT_SETTING
+15:38:58.932 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.2.5.Final
+15:38:59.787 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [init,56] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+15:38:59.787 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [init,56] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+15:39:01.395 [main] INFO  c.z.d.DiabetesPlatformApplication - [logStartupProfileInfo,638] - The following 1 profile is active: "dev"
+15:39:04.197 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-9310"]
+15:39:04.200 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+15:39:04.200 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.102]
+15:39:04.450 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+15:39:05.596 [main] INFO  c.a.d.p.DruidDataSource - [init,1002] - {dataSource-1,master} inited
+15:39:05.599 [main] INFO  c.b.d.d.DynamicRoutingDataSource - [addDataSource,158] - dynamic-datasource - add a datasource named [master] success
+15:39:05.599 [main] INFO  c.b.d.d.DynamicRoutingDataSource - [afterPropertiesSet,241] - dynamic-datasource initial loaded [1] datasource,primary datasource named [master]
+15:39:07.576 [main] INFO  c.a.c.s.SentinelWebMvcConfigurer - [addInterceptors,52] - [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+15:39:11.585 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-9310"]
+15:39:11.682 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [init,56] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+15:39:11.682 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [init,56] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+15:39:11.861 [main] INFO  c.a.c.n.r.NacosServiceRegistry - [register,76] - nacos registry, DEFAULT_GROUP diabetes-platform-zfy 192.168.31.113:9310 register finished
+15:39:12.157 [main] INFO  c.z.d.DiabetesPlatformApplication - [logStarted,61] - Started DiabetesPlatformApplication in 13.921 seconds (JVM running for 15.565)
+15:39:12.220 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,141] - [Nacos Config] Listening config: dataId=diabetes-platform-zfy-dev.yml, group=DEFAULT_GROUP
+15:39:12.225 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,141] - [Nacos Config] Listening config: dataId=diabetes-platform-zfy.yml, group=DEFAULT_GROUP
+15:39:12.225 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,141] - [Nacos Config] Listening config: dataId=diabetes-platform-zfy, group=DEFAULT_GROUP
+15:39:17.967 [http-nio-9310-exec-1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+16:19:54.764 [SpringApplicationShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,95] - De-registering from Nacos Server now...
+16:19:54.767 [SpringApplicationShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,115] - De-registration finished.
+16:19:54.785 [SpringApplicationShutdownHook] INFO  c.b.d.d.DynamicRoutingDataSource - [destroy,215] - dynamic-datasource start closing ....
+16:19:54.792 [SpringApplicationShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2204] - {dataSource-1} closing ...
+16:19:54.808 [SpringApplicationShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2277] - {dataSource-1} closed
+16:19:54.808 [SpringApplicationShutdownHook] INFO  c.b.d.d.d.DefaultDataSourceDestroyer - [destroy,98] - dynamic-datasource close the datasource named [master] success,
+16:19:54.808 [SpringApplicationShutdownHook] INFO  c.b.d.d.DynamicRoutingDataSource - [destroy,219] - dynamic-datasource all closed success,bye
+16:20:02.506 [main] INFO  c.a.n.c.e.SearchableProperties - [sortPropertySourceDefaultOrder,197] - properties search order:PROPERTIES->JVM->ENV->DEFAULT_SETTING
+16:20:02.603 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.2.5.Final
+16:20:03.519 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [init,56] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+16:20:03.520 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [init,56] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+16:20:05.290 [main] INFO  c.z.d.DiabetesPlatformApplication - [logStartupProfileInfo,638] - The following 1 profile is active: "dev"
+16:20:08.022 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-9310"]
+16:20:08.026 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+16:20:08.026 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.102]
+16:20:08.390 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+16:20:09.717 [main] INFO  c.a.d.p.DruidDataSource - [init,1002] - {dataSource-1,master} inited
+16:20:09.719 [main] INFO  c.b.d.d.DynamicRoutingDataSource - [addDataSource,158] - dynamic-datasource - add a datasource named [master] success
+16:20:09.719 [main] INFO  c.b.d.d.DynamicRoutingDataSource - [afterPropertiesSet,241] - dynamic-datasource initial loaded [1] datasource,primary datasource named [master]
+16:20:11.920 [main] INFO  c.a.c.s.SentinelWebMvcConfigurer - [addInterceptors,52] - [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+16:20:16.229 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-9310"]
+16:20:16.308 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [init,56] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+16:20:16.308 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [init,56] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+16:20:16.470 [main] INFO  c.a.c.n.r.NacosServiceRegistry - [register,76] - nacos registry, DEFAULT_GROUP diabetes-platform-zfy 192.168.31.113:9310 register finished
+16:20:16.675 [main] INFO  c.z.d.DiabetesPlatformApplication - [logStarted,61] - Started DiabetesPlatformApplication in 14.857 seconds (JVM running for 16.61)
+16:20:16.727 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,141] - [Nacos Config] Listening config: dataId=diabetes-platform-zfy-dev.yml, group=DEFAULT_GROUP
+16:20:16.730 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,141] - [Nacos Config] Listening config: dataId=diabetes-platform-zfy.yml, group=DEFAULT_GROUP
+16:20:16.730 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,141] - [Nacos Config] Listening config: dataId=diabetes-platform-zfy, group=DEFAULT_GROUP
+16:20:38.641 [http-nio-9310-exec-4] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+16:49:35.911 [SpringApplicationShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,95] - De-registering from Nacos Server now...
+16:49:35.914 [SpringApplicationShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,115] - De-registration finished.
+16:49:35.934 [SpringApplicationShutdownHook] INFO  c.b.d.d.DynamicRoutingDataSource - [destroy,215] - dynamic-datasource start closing ....
+16:49:35.945 [SpringApplicationShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2204] - {dataSource-1} closing ...
+16:49:35.959 [SpringApplicationShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2277] - {dataSource-1} closed
+16:49:35.959 [SpringApplicationShutdownHook] INFO  c.b.d.d.d.DefaultDataSourceDestroyer - [destroy,98] - dynamic-datasource close the datasource named [master] success,
+16:49:35.959 [SpringApplicationShutdownHook] INFO  c.b.d.d.DynamicRoutingDataSource - [destroy,219] - dynamic-datasource all closed success,bye
+16:49:42.546 [main] INFO  c.a.n.c.e.SearchableProperties - [sortPropertySourceDefaultOrder,197] - properties search order:PROPERTIES->JVM->ENV->DEFAULT_SETTING
+16:49:42.630 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.2.5.Final
+16:49:43.546 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [init,56] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+16:49:43.546 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [init,56] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+16:49:45.266 [main] INFO  c.z.d.DiabetesPlatformApplication - [logStartupProfileInfo,638] - The following 1 profile is active: "dev"
+16:49:47.651 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-9310"]
+16:49:47.655 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+16:49:47.655 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.102]
+16:49:47.948 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+16:49:49.342 [main] INFO  c.a.d.p.DruidDataSource - [init,1002] - {dataSource-1,master} inited
+16:49:49.345 [main] INFO  c.b.d.d.DynamicRoutingDataSource - [addDataSource,158] - dynamic-datasource - add a datasource named [master] success
+16:49:49.345 [main] INFO  c.b.d.d.DynamicRoutingDataSource - [afterPropertiesSet,241] - dynamic-datasource initial loaded [1] datasource,primary datasource named [master]
+16:49:51.355 [main] INFO  c.a.c.s.SentinelWebMvcConfigurer - [addInterceptors,52] - [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+16:49:55.248 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-9310"]
+16:49:55.309 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [init,56] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+16:49:55.310 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [init,56] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+16:49:55.464 [main] INFO  c.a.c.n.r.NacosServiceRegistry - [register,76] - nacos registry, DEFAULT_GROUP diabetes-platform-zfy 192.168.31.113:9310 register finished
+16:49:55.610 [main] INFO  c.z.d.DiabetesPlatformApplication - [logStarted,61] - Started DiabetesPlatformApplication in 13.575 seconds (JVM running for 15.103)
+16:49:55.651 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,141] - [Nacos Config] Listening config: dataId=diabetes-platform-zfy-dev.yml, group=DEFAULT_GROUP
+16:49:55.653 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,141] - [Nacos Config] Listening config: dataId=diabetes-platform-zfy.yml, group=DEFAULT_GROUP
+16:49:55.653 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,141] - [Nacos Config] Listening config: dataId=diabetes-platform-zfy, group=DEFAULT_GROUP
+16:50:09.388 [http-nio-9310-exec-1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+16:55:55.170 [SpringApplicationShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,95] - De-registering from Nacos Server now...
+16:55:55.175 [SpringApplicationShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,115] - De-registration finished.
+16:55:55.215 [SpringApplicationShutdownHook] INFO  c.b.d.d.DynamicRoutingDataSource - [destroy,215] - dynamic-datasource start closing ....
+16:55:55.231 [SpringApplicationShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2204] - {dataSource-1} closing ...
+16:55:55.259 [SpringApplicationShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2277] - {dataSource-1} closed
+16:55:55.259 [SpringApplicationShutdownHook] INFO  c.b.d.d.d.DefaultDataSourceDestroyer - [destroy,98] - dynamic-datasource close the datasource named [master] success,
+16:55:55.260 [SpringApplicationShutdownHook] INFO  c.b.d.d.DynamicRoutingDataSource - [destroy,219] - dynamic-datasource all closed success,bye
+16:56:02.265 [main] INFO  c.a.n.c.e.SearchableProperties - [sortPropertySourceDefaultOrder,197] - properties search order:PROPERTIES->JVM->ENV->DEFAULT_SETTING
+16:56:02.368 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.2.5.Final
+16:56:03.205 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [init,56] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+16:56:03.205 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [init,56] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+16:56:05.047 [main] INFO  c.z.d.DiabetesPlatformApplication - [logStartupProfileInfo,638] - The following 1 profile is active: "dev"
+16:56:07.646 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-9310"]
+16:56:07.649 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+16:56:07.649 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.102]
+16:56:07.992 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+16:56:09.434 [main] INFO  c.a.d.p.DruidDataSource - [init,1002] - {dataSource-1,master} inited
+16:56:09.437 [main] INFO  c.b.d.d.DynamicRoutingDataSource - [addDataSource,158] - dynamic-datasource - add a datasource named [master] success
+16:56:09.437 [main] INFO  c.b.d.d.DynamicRoutingDataSource - [afterPropertiesSet,241] - dynamic-datasource initial loaded [1] datasource,primary datasource named [master]
+16:56:11.712 [main] INFO  c.a.c.s.SentinelWebMvcConfigurer - [addInterceptors,52] - [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+16:56:15.844 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-9310"]
+16:56:15.935 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [init,56] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+16:56:15.935 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [init,56] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+16:56:16.103 [main] INFO  c.a.c.n.r.NacosServiceRegistry - [register,76] - nacos registry, DEFAULT_GROUP diabetes-platform-zfy 192.168.31.113:9310 register finished
+16:56:16.289 [main] INFO  c.z.d.DiabetesPlatformApplication - [logStarted,61] - Started DiabetesPlatformApplication in 14.574 seconds (JVM running for 16.244)
+16:56:16.347 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,141] - [Nacos Config] Listening config: dataId=diabetes-platform-zfy-dev.yml, group=DEFAULT_GROUP
+16:56:16.350 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,141] - [Nacos Config] Listening config: dataId=diabetes-platform-zfy.yml, group=DEFAULT_GROUP
+16:56:16.351 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,141] - [Nacos Config] Listening config: dataId=diabetes-platform-zfy, group=DEFAULT_GROUP
+16:56:39.408 [http-nio-9310-exec-3] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+17:31:21.499 [SpringApplicationShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,95] - De-registering from Nacos Server now...
+17:31:21.501 [SpringApplicationShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,115] - De-registration finished.
+17:31:21.521 [SpringApplicationShutdownHook] INFO  c.b.d.d.DynamicRoutingDataSource - [destroy,215] - dynamic-datasource start closing ....
+17:31:21.534 [SpringApplicationShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2204] - {dataSource-1} closing ...
+17:31:21.552 [SpringApplicationShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2277] - {dataSource-1} closed
+17:31:21.553 [SpringApplicationShutdownHook] INFO  c.b.d.d.d.DefaultDataSourceDestroyer - [destroy,98] - dynamic-datasource close the datasource named [master] success,
+17:31:21.553 [SpringApplicationShutdownHook] INFO  c.b.d.d.DynamicRoutingDataSource - [destroy,219] - dynamic-datasource all closed success,bye
+17:31:30.336 [main] INFO  c.a.n.c.e.SearchableProperties - [sortPropertySourceDefaultOrder,197] - properties search order:PROPERTIES->JVM->ENV->DEFAULT_SETTING
+17:31:30.445 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.2.5.Final
+17:31:31.548 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [init,56] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+17:31:31.548 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [init,56] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+17:31:33.638 [main] INFO  c.z.d.DiabetesPlatformApplication - [logStartupProfileInfo,638] - The following 1 profile is active: "dev"
+17:31:37.283 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-9310"]
+17:31:37.289 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+17:31:37.290 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.102]
+17:31:37.871 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+17:31:40.205 [main] INFO  c.a.d.p.DruidDataSource - [init,1002] - {dataSource-1,master} inited
+17:31:40.209 [main] INFO  c.b.d.d.DynamicRoutingDataSource - [addDataSource,158] - dynamic-datasource - add a datasource named [master] success
+17:31:40.209 [main] INFO  c.b.d.d.DynamicRoutingDataSource - [afterPropertiesSet,241] - dynamic-datasource initial loaded [1] datasource,primary datasource named [master]
+17:31:44.281 [main] INFO  c.a.c.s.SentinelWebMvcConfigurer - [addInterceptors,52] - [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+17:31:52.229 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-9310"]
+17:31:52.320 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [init,56] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+17:31:52.320 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [init,56] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+17:31:52.496 [main] INFO  c.a.c.n.r.NacosServiceRegistry - [register,76] - nacos registry, DEFAULT_GROUP diabetes-platform-zfy 192.168.31.113:9310 register finished
+17:31:52.924 [main] INFO  c.z.d.DiabetesPlatformApplication - [logStarted,61] - Started DiabetesPlatformApplication in 23.242 seconds (JVM running for 25.935)
+17:31:53.014 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,141] - [Nacos Config] Listening config: dataId=diabetes-platform-zfy-dev.yml, group=DEFAULT_GROUP
+17:31:53.018 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,141] - [Nacos Config] Listening config: dataId=diabetes-platform-zfy.yml, group=DEFAULT_GROUP
+17:31:53.019 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,141] - [Nacos Config] Listening config: dataId=diabetes-platform-zfy, group=DEFAULT_GROUP
+17:32:10.420 [http-nio-9310-exec-1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+17:50:55.004 [SpringApplicationShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,95] - De-registering from Nacos Server now...
+17:50:55.008 [SpringApplicationShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,115] - De-registration finished.
+17:50:55.037 [SpringApplicationShutdownHook] INFO  c.b.d.d.DynamicRoutingDataSource - [destroy,215] - dynamic-datasource start closing ....
+17:50:55.047 [SpringApplicationShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2204] - {dataSource-1} closing ...
+17:50:55.070 [SpringApplicationShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2277] - {dataSource-1} closed
+17:50:55.070 [SpringApplicationShutdownHook] INFO  c.b.d.d.d.DefaultDataSourceDestroyer - [destroy,98] - dynamic-datasource close the datasource named [master] success,
+17:50:55.071 [SpringApplicationShutdownHook] INFO  c.b.d.d.DynamicRoutingDataSource - [destroy,219] - dynamic-datasource all closed success,bye
+17:51:01.997 [main] INFO  c.a.n.c.e.SearchableProperties - [sortPropertySourceDefaultOrder,197] - properties search order:PROPERTIES->JVM->ENV->DEFAULT_SETTING
+17:51:02.097 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.2.5.Final
+17:51:02.969 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [init,56] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+17:51:02.969 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [init,56] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+17:51:04.501 [main] INFO  c.z.d.DiabetesPlatformApplication - [logStartupProfileInfo,638] - The following 1 profile is active: "dev"
+17:51:07.274 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-9310"]
+17:51:07.278 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+17:51:07.278 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.102]
+17:51:07.589 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+17:51:08.754 [main] INFO  c.a.d.p.DruidDataSource - [init,1002] - {dataSource-1,master} inited
+17:51:08.757 [main] INFO  c.b.d.d.DynamicRoutingDataSource - [addDataSource,158] - dynamic-datasource - add a datasource named [master] success
+17:51:08.757 [main] INFO  c.b.d.d.DynamicRoutingDataSource - [afterPropertiesSet,241] - dynamic-datasource initial loaded [1] datasource,primary datasource named [master]
+17:51:11.152 [main] INFO  c.a.c.s.SentinelWebMvcConfigurer - [addInterceptors,52] - [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+17:51:15.189 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-9310"]
+17:51:15.276 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [init,56] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+17:51:15.276 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [init,56] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+17:51:15.436 [main] INFO  c.a.c.n.r.NacosServiceRegistry - [register,76] - nacos registry, DEFAULT_GROUP diabetes-platform-zfy 192.168.31.113:9310 register finished
+17:51:15.643 [main] INFO  c.z.d.DiabetesPlatformApplication - [logStarted,61] - Started DiabetesPlatformApplication in 14.239 seconds (JVM running for 15.923)
+17:51:15.697 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,141] - [Nacos Config] Listening config: dataId=diabetes-platform-zfy-dev.yml, group=DEFAULT_GROUP
+17:51:15.699 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,141] - [Nacos Config] Listening config: dataId=diabetes-platform-zfy.yml, group=DEFAULT_GROUP
+17:51:15.700 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,141] - [Nacos Config] Listening config: dataId=diabetes-platform-zfy, group=DEFAULT_GROUP
+17:51:23.735 [http-nio-9310-exec-1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+18:34:21.468 [SpringApplicationShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,95] - De-registering from Nacos Server now...
+18:34:21.471 [SpringApplicationShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,115] - De-registration finished.
+18:34:21.487 [SpringApplicationShutdownHook] INFO  c.b.d.d.DynamicRoutingDataSource - [destroy,215] - dynamic-datasource start closing ....
+18:34:21.493 [SpringApplicationShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2204] - {dataSource-1} closing ...
+18:34:21.504 [SpringApplicationShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2277] - {dataSource-1} closed
+18:34:21.504 [SpringApplicationShutdownHook] INFO  c.b.d.d.d.DefaultDataSourceDestroyer - [destroy,98] - dynamic-datasource close the datasource named [master] success,
+18:34:21.504 [SpringApplicationShutdownHook] INFO  c.b.d.d.DynamicRoutingDataSource - [destroy,219] - dynamic-datasource all closed success,bye
+18:34:25.912 [main] INFO  c.a.n.c.e.SearchableProperties - [sortPropertySourceDefaultOrder,197] - properties search order:PROPERTIES->JVM->ENV->DEFAULT_SETTING
+18:34:26.009 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.2.5.Final
+18:34:26.864 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [init,56] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+18:34:26.865 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [init,56] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+18:34:28.487 [main] INFO  c.z.d.DiabetesPlatformApplication - [logStartupProfileInfo,638] - The following 1 profile is active: "dev"
+18:34:31.242 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-9310"]
+18:34:31.244 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+18:34:31.245 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.102]
+18:34:31.522 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+18:34:32.940 [main] INFO  c.a.d.p.DruidDataSource - [init,1002] - {dataSource-1,master} inited
+18:34:32.942 [main] INFO  c.b.d.d.DynamicRoutingDataSource - [addDataSource,158] - dynamic-datasource - add a datasource named [master] success
+18:34:32.942 [main] INFO  c.b.d.d.DynamicRoutingDataSource - [afterPropertiesSet,241] - dynamic-datasource initial loaded [1] datasource,primary datasource named [master]
+18:34:35.260 [main] INFO  c.a.c.s.SentinelWebMvcConfigurer - [addInterceptors,52] - [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+18:34:40.349 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-9310"]
+18:34:40.462 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [init,56] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+18:34:40.463 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [init,56] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+18:34:40.627 [main] INFO  c.a.c.n.r.NacosServiceRegistry - [register,76] - nacos registry, DEFAULT_GROUP diabetes-platform-zfy 192.168.31.113:9310 register finished
+18:34:40.815 [main] INFO  c.z.d.DiabetesPlatformApplication - [logStarted,61] - Started DiabetesPlatformApplication in 15.523 seconds (JVM running for 17.357)
+18:34:40.853 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,141] - [Nacos Config] Listening config: dataId=diabetes-platform-zfy-dev.yml, group=DEFAULT_GROUP
+18:34:40.855 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,141] - [Nacos Config] Listening config: dataId=diabetes-platform-zfy.yml, group=DEFAULT_GROUP
+18:34:40.856 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,141] - [Nacos Config] Listening config: dataId=diabetes-platform-zfy, group=DEFAULT_GROUP
+18:34:44.741 [http-nio-9310-exec-1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+18:51:52.265 [SpringApplicationShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,95] - De-registering from Nacos Server now...
+18:51:52.269 [SpringApplicationShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,115] - De-registration finished.
+18:51:52.291 [SpringApplicationShutdownHook] INFO  c.b.d.d.DynamicRoutingDataSource - [destroy,215] - dynamic-datasource start closing ....
+18:51:52.301 [SpringApplicationShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2204] - {dataSource-1} closing ...
+18:51:52.316 [SpringApplicationShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2277] - {dataSource-1} closed
+18:51:52.317 [SpringApplicationShutdownHook] INFO  c.b.d.d.d.DefaultDataSourceDestroyer - [destroy,98] - dynamic-datasource close the datasource named [master] success,
+18:51:52.317 [SpringApplicationShutdownHook] INFO  c.b.d.d.DynamicRoutingDataSource - [destroy,219] - dynamic-datasource all closed success,bye
+18:51:59.705 [main] INFO  c.a.n.c.e.SearchableProperties - [sortPropertySourceDefaultOrder,197] - properties search order:PROPERTIES->JVM->ENV->DEFAULT_SETTING
+18:51:59.854 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.2.5.Final
+18:52:00.852 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [init,56] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+18:52:00.852 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [init,56] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+18:52:02.766 [main] INFO  c.z.d.DiabetesPlatformApplication - [logStartupProfileInfo,638] - The following 1 profile is active: "dev"
+18:52:05.499 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-9310"]
+18:52:05.503 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+18:52:05.503 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.102]
+18:52:05.972 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+18:52:07.816 [main] INFO  c.a.d.p.DruidDataSource - [init,1002] - {dataSource-1,master} inited
+18:52:07.821 [main] INFO  c.b.d.d.DynamicRoutingDataSource - [addDataSource,158] - dynamic-datasource - add a datasource named [master] success
+18:52:07.822 [main] INFO  c.b.d.d.DynamicRoutingDataSource - [afterPropertiesSet,241] - dynamic-datasource initial loaded [1] datasource,primary datasource named [master]
+18:52:10.310 [main] INFO  c.a.c.s.SentinelWebMvcConfigurer - [addInterceptors,52] - [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+18:52:17.045 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-9310"]
+18:52:17.151 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [init,56] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+18:52:17.151 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [init,56] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+18:52:17.327 [main] INFO  c.a.c.n.r.NacosServiceRegistry - [register,76] - nacos registry, DEFAULT_GROUP diabetes-platform-zfy 192.168.31.113:9310 register finished
+18:52:17.751 [main] INFO  c.z.d.DiabetesPlatformApplication - [logStarted,61] - Started DiabetesPlatformApplication in 18.711 seconds (JVM running for 20.513)
+18:52:17.817 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,141] - [Nacos Config] Listening config: dataId=diabetes-platform-zfy-dev.yml, group=DEFAULT_GROUP
+18:52:17.822 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,141] - [Nacos Config] Listening config: dataId=diabetes-platform-zfy.yml, group=DEFAULT_GROUP
+18:52:17.822 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,141] - [Nacos Config] Listening config: dataId=diabetes-platform-zfy, group=DEFAULT_GROUP
+18:52:42.373 [http-nio-9310-exec-1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+19:22:04.153 [SpringApplicationShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,95] - De-registering from Nacos Server now...
+19:22:04.157 [SpringApplicationShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,115] - De-registration finished.
+19:22:04.194 [SpringApplicationShutdownHook] INFO  c.b.d.d.DynamicRoutingDataSource - [destroy,215] - dynamic-datasource start closing ....
+19:22:04.214 [SpringApplicationShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2204] - {dataSource-1} closing ...
+19:22:04.243 [SpringApplicationShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2277] - {dataSource-1} closed
+19:22:04.244 [SpringApplicationShutdownHook] INFO  c.b.d.d.d.DefaultDataSourceDestroyer - [destroy,98] - dynamic-datasource close the datasource named [master] success,
+19:22:04.244 [SpringApplicationShutdownHook] INFO  c.b.d.d.DynamicRoutingDataSource - [destroy,219] - dynamic-datasource all closed success,bye
+19:22:10.534 [main] INFO  c.a.n.c.e.SearchableProperties - [sortPropertySourceDefaultOrder,197] - properties search order:PROPERTIES->JVM->ENV->DEFAULT_SETTING
+19:22:10.638 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.2.5.Final
+19:22:11.568 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [init,56] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+19:22:11.569 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [init,56] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+19:22:13.372 [main] INFO  c.z.d.DiabetesPlatformApplication - [logStartupProfileInfo,638] - The following 1 profile is active: "dev"
+19:22:15.960 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-9310"]
+19:22:15.965 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+19:22:15.965 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.102]
+19:22:16.293 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+19:22:17.822 [main] INFO  c.a.d.p.DruidDataSource - [init,1002] - {dataSource-1,master} inited
+19:22:17.825 [main] INFO  c.b.d.d.DynamicRoutingDataSource - [addDataSource,158] - dynamic-datasource - add a datasource named [master] success
+19:22:17.826 [main] INFO  c.b.d.d.DynamicRoutingDataSource - [afterPropertiesSet,241] - dynamic-datasource initial loaded [1] datasource,primary datasource named [master]
+19:22:20.473 [main] INFO  c.a.c.s.SentinelWebMvcConfigurer - [addInterceptors,52] - [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+19:22:26.169 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-9310"]
+19:22:26.252 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [init,56] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+19:22:26.252 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [init,56] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+19:22:26.435 [main] INFO  c.a.c.n.r.NacosServiceRegistry - [register,76] - nacos registry, DEFAULT_GROUP diabetes-platform-zfy 192.168.31.113:9310 register finished
+19:22:26.846 [main] INFO  c.z.d.DiabetesPlatformApplication - [logStarted,61] - Started DiabetesPlatformApplication in 16.916 seconds (JVM running for 18.368)
+19:22:26.920 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,141] - [Nacos Config] Listening config: dataId=diabetes-platform-zfy-dev.yml, group=DEFAULT_GROUP
+19:22:26.923 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,141] - [Nacos Config] Listening config: dataId=diabetes-platform-zfy.yml, group=DEFAULT_GROUP
+19:22:26.924 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,141] - [Nacos Config] Listening config: dataId=diabetes-platform-zfy, group=DEFAULT_GROUP
+19:22:37.144 [http-nio-9310-exec-1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+20:45:36.569 [SpringApplicationShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,95] - De-registering from Nacos Server now...
+20:45:36.573 [SpringApplicationShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,115] - De-registration finished.
+20:45:36.594 [SpringApplicationShutdownHook] INFO  c.b.d.d.DynamicRoutingDataSource - [destroy,215] - dynamic-datasource start closing ....
+20:45:36.604 [SpringApplicationShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2204] - {dataSource-1} closing ...
+20:45:36.618 [SpringApplicationShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2277] - {dataSource-1} closed
+20:45:36.618 [SpringApplicationShutdownHook] INFO  c.b.d.d.d.DefaultDataSourceDestroyer - [destroy,98] - dynamic-datasource close the datasource named [master] success,
+20:45:36.618 [SpringApplicationShutdownHook] INFO  c.b.d.d.DynamicRoutingDataSource - [destroy,219] - dynamic-datasource all closed success,bye
+20:45:43.519 [main] INFO  c.a.n.c.e.SearchableProperties - [sortPropertySourceDefaultOrder,197] - properties search order:PROPERTIES->JVM->ENV->DEFAULT_SETTING
+20:45:43.626 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.2.5.Final
+20:45:44.602 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [init,56] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+20:45:44.602 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [init,56] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+20:45:46.230 [main] INFO  c.z.d.DiabetesPlatformApplication - [logStartupProfileInfo,638] - The following 1 profile is active: "dev"
+20:45:49.348 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-9310"]
+20:45:49.354 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+20:45:49.354 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.102]
+20:45:49.678 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+20:45:50.770 [main] INFO  c.a.d.p.DruidDataSource - [init,1002] - {dataSource-1,master} inited
+20:45:50.774 [main] INFO  c.b.d.d.DynamicRoutingDataSource - [addDataSource,158] - dynamic-datasource - add a datasource named [master] success
+20:45:50.774 [main] INFO  c.b.d.d.DynamicRoutingDataSource - [afterPropertiesSet,241] - dynamic-datasource initial loaded [1] datasource,primary datasource named [master]
+20:45:53.548 [main] INFO  c.a.c.s.SentinelWebMvcConfigurer - [addInterceptors,52] - [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+20:45:57.746 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-9310"]
+20:45:57.836 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [init,56] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+20:45:57.836 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [init,56] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+20:45:57.996 [main] INFO  c.a.c.n.r.NacosServiceRegistry - [register,76] - nacos registry, DEFAULT_GROUP diabetes-platform-zfy 192.168.31.113:9310 register finished
+20:45:58.206 [main] INFO  c.z.d.DiabetesPlatformApplication - [logStarted,61] - Started DiabetesPlatformApplication in 15.361 seconds (JVM running for 17.368)
+20:45:58.257 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,141] - [Nacos Config] Listening config: dataId=diabetes-platform-zfy-dev.yml, group=DEFAULT_GROUP
+20:45:58.260 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,141] - [Nacos Config] Listening config: dataId=diabetes-platform-zfy.yml, group=DEFAULT_GROUP
+20:45:58.261 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,141] - [Nacos Config] Listening config: dataId=diabetes-platform-zfy, group=DEFAULT_GROUP
+20:46:03.278 [http-nio-9310-exec-1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+22:24:16.260 [main] INFO  c.z.d.u.DeepSeekUtils - [deepSeek,33] - Response status code: 200
+22:24:16.265 [main] INFO  c.z.d.u.DeepSeekUtils - [deepSeek,51] - deepSeek api call time: 16220ms
+22:25:56.890 [main] INFO  c.z.d.u.DeepSeekUtils - [deepSeek,33] - Response status code: 200
+22:25:56.894 [main] INFO  c.z.d.u.DeepSeekUtils - [deepSeek,51] - deepSeek api call time: 9946ms
+22:45:10.870 [SpringApplicationShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,95] - De-registering from Nacos Server now...
+22:45:10.878 [SpringApplicationShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,115] - De-registration finished.
+22:45:10.903 [SpringApplicationShutdownHook] INFO  c.b.d.d.DynamicRoutingDataSource - [destroy,215] - dynamic-datasource start closing ....
+22:45:10.912 [SpringApplicationShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2204] - {dataSource-1} closing ...
+22:45:10.927 [SpringApplicationShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2277] - {dataSource-1} closed
+22:45:10.927 [SpringApplicationShutdownHook] INFO  c.b.d.d.d.DefaultDataSourceDestroyer - [destroy,98] - dynamic-datasource close the datasource named [master] success,
+22:45:10.927 [SpringApplicationShutdownHook] INFO  c.b.d.d.DynamicRoutingDataSource - [destroy,219] - dynamic-datasource all closed success,bye
+22:45:22.764 [main] INFO  c.a.n.c.e.SearchableProperties - [sortPropertySourceDefaultOrder,197] - properties search order:PROPERTIES->JVM->ENV->DEFAULT_SETTING
+22:45:22.855 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.2.5.Final
+22:45:23.677 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [init,56] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+22:45:23.677 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [init,56] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+22:45:25.364 [main] INFO  c.z.d.DiabetesPlatformApplication - [logStartupProfileInfo,638] - The following 1 profile is active: "dev"
+22:45:28.534 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-9310"]
+22:45:28.538 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+22:45:28.540 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.102]
+22:45:28.816 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+22:45:30.030 [main] INFO  c.a.d.p.DruidDataSource - [init,1002] - {dataSource-1,master} inited
+22:45:30.032 [main] INFO  c.b.d.d.DynamicRoutingDataSource - [addDataSource,158] - dynamic-datasource - add a datasource named [master] success
+22:45:30.032 [main] INFO  c.b.d.d.DynamicRoutingDataSource - [afterPropertiesSet,241] - dynamic-datasource initial loaded [1] datasource,primary datasource named [master]
+22:45:32.372 [main] INFO  c.a.c.s.SentinelWebMvcConfigurer - [addInterceptors,52] - [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+22:45:37.238 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-9310"]
+22:45:37.317 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [init,56] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+22:45:37.317 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [init,56] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+22:45:37.470 [main] INFO  c.a.c.n.r.NacosServiceRegistry - [register,76] - nacos registry, DEFAULT_GROUP diabetes-platform-zfy 192.168.31.113:9310 register finished
+22:45:37.656 [main] INFO  c.z.d.DiabetesPlatformApplication - [logStarted,61] - Started DiabetesPlatformApplication in 15.486 seconds (JVM running for 17.442)
+22:45:37.712 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,141] - [Nacos Config] Listening config: dataId=diabetes-platform-zfy-dev.yml, group=DEFAULT_GROUP
+22:45:37.716 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,141] - [Nacos Config] Listening config: dataId=diabetes-platform-zfy.yml, group=DEFAULT_GROUP
+22:45:37.717 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,141] - [Nacos Config] Listening config: dataId=diabetes-platform-zfy, group=DEFAULT_GROUP
+22:45:47.698 [http-nio-9310-exec-3] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+23:21:01.492 [http-nio-9310-exec-1] INFO  c.z.d.u.DeepSeekUtils - [deepSeek,33] - Response status code: 200
+23:21:01.499 [http-nio-9310-exec-1] INFO  c.z.d.u.DeepSeekUtils - [deepSeek,51] - deepSeek api call time: 9409ms
+23:21:58.126 [http-nio-9310-exec-1] INFO  c.z.d.u.DeepSeekUtils - [deepSeek,33] - Response status code: 200
+23:21:58.126 [http-nio-9310-exec-1] INFO  c.z.d.u.DeepSeekUtils - [deepSeek,51] - deepSeek api call time: 8649ms
+23:28:14.312 [http-nio-9310-exec-7] INFO  c.z.d.u.DeepSeekUtils - [deepSeek,33] - Response status code: 200
+23:28:14.313 [http-nio-9310-exec-7] INFO  c.z.d.u.DeepSeekUtils - [deepSeek,51] - deepSeek api call time: 8684ms
+23:29:06.057 [http-nio-9310-exec-5] INFO  c.z.d.u.DeepSeekUtils - [deepSeek,33] - Response status code: 200
+23:29:06.060 [http-nio-9310-exec-5] INFO  c.z.d.u.DeepSeekUtils - [deepSeek,51] - deepSeek api call time: 8404ms
+23:36:53.652 [http-nio-9310-exec-4] INFO  c.z.d.u.DeepSeekUtils - [deepSeek,33] - Response status code: 200
+23:36:53.653 [http-nio-9310-exec-4] INFO  c.z.d.u.DeepSeekUtils - [deepSeek,51] - deepSeek api call time: 8578ms
+23:54:55.434 [SpringApplicationShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,95] - De-registering from Nacos Server now...
+23:54:55.441 [SpringApplicationShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,115] - De-registration finished.
+23:54:55.517 [SpringApplicationShutdownHook] INFO  c.b.d.d.DynamicRoutingDataSource - [destroy,215] - dynamic-datasource start closing ....
+23:54:55.536 [SpringApplicationShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2204] - {dataSource-1} closing ...
+23:54:55.558 [SpringApplicationShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2277] - {dataSource-1} closed
+23:54:55.559 [SpringApplicationShutdownHook] INFO  c.b.d.d.d.DefaultDataSourceDestroyer - [destroy,98] - dynamic-datasource close the datasource named [master] success,
+23:54:55.559 [SpringApplicationShutdownHook] INFO  c.b.d.d.DynamicRoutingDataSource - [destroy,219] - dynamic-datasource all closed success,bye
+23:55:53.195 [main] INFO  c.a.n.c.e.SearchableProperties - [sortPropertySourceDefaultOrder,197] - properties search order:PROPERTIES->JVM->ENV->DEFAULT_SETTING
+23:55:53.297 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.2.5.Final
+23:55:54.313 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [init,56] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+23:55:54.314 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [init,56] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+23:55:56.455 [main] INFO  c.z.d.DiabetesPlatformApplication - [logStartupProfileInfo,638] - The following 1 profile is active: "dev"
+23:56:00.102 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-9310"]
+23:56:00.138 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+23:56:00.140 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.102]
+23:56:00.883 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+23:56:03.470 [main] INFO  c.a.d.p.DruidDataSource - [init,1002] - {dataSource-1,master} inited
+23:56:03.474 [main] INFO  c.b.d.d.DynamicRoutingDataSource - [addDataSource,158] - dynamic-datasource - add a datasource named [master] success
+23:56:03.474 [main] INFO  c.b.d.d.DynamicRoutingDataSource - [afterPropertiesSet,241] - dynamic-datasource initial loaded [1] datasource,primary datasource named [master]
+23:56:08.307 [main] INFO  c.a.c.s.SentinelWebMvcConfigurer - [addInterceptors,52] - [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+23:56:16.458 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-9310"]
+23:56:16.585 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [init,56] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+23:56:16.586 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [init,56] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+23:56:16.772 [main] INFO  c.a.c.n.r.NacosServiceRegistry - [register,76] - nacos registry, DEFAULT_GROUP diabetes-platform-zfy 192.168.31.113:9310 register finished
+23:56:17.204 [main] INFO  c.z.d.DiabetesPlatformApplication - [logStarted,61] - Started DiabetesPlatformApplication in 24.633 seconds (JVM running for 26.303)
+23:56:17.299 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,141] - [Nacos Config] Listening config: dataId=diabetes-platform-zfy-dev.yml, group=DEFAULT_GROUP
+23:56:17.302 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,141] - [Nacos Config] Listening config: dataId=diabetes-platform-zfy.yml, group=DEFAULT_GROUP
+23:56:17.303 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,141] - [Nacos Config] Listening config: dataId=diabetes-platform-zfy, group=DEFAULT_GROUP
+23:56:19.759 [http-nio-9310-exec-1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'

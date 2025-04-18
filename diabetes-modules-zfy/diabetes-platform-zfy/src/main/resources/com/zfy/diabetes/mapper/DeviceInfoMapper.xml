@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zfy.diabetes.mapper.DeviceInfoMapper">
+
+    <resultMap type="com.zfy.diabetes.domain.DeviceInfo" id="DeviceInfoResult">
+        <result property="deviceId"    column="device_id"    />
+        <result property="deviceName"    column="device_name"    />
+        <result property="serialNumber"    column="serial_number"    />
+        <result property="deviceType"    column="device_type"    />
+        <result property="manufacturer"    column="manufacturer"    />
+        <result property="manufactureDate"    column="manufacture_date"    />
+        <result property="warrantyPeriod"    column="warranty_period"    />
+        <result property="status"    column="status"    />
+        <result property="createTime"    column="create_time"    />
+        <result property="updateTime"    column="update_time"    />
+    </resultMap>
+
+    <sql id="selectDeviceInfoVo">
+        select device_id, device_name, serial_number, device_type, manufacturer, manufacture_date, warranty_period, status, create_time, update_time from device_info
+    </sql>
+
+    <select id="selectDeviceInfoList" parameterType="com.zfy.diabetes.domain.DeviceInfo" resultMap="DeviceInfoResult">
+        <include refid="selectDeviceInfoVo"/>
+        <where>
+            <if test="deviceName != null  and deviceName != ''"> and device_name like concat('%', #{deviceName}, '%')</if>
+            <if test="serialNumber != null  and serialNumber != ''"> and serial_number = #{serialNumber}</if>
+            <if test="deviceType != null  and deviceType != ''"> and device_type = #{deviceType}</if>
+            <if test="manufacturer != null  and manufacturer != ''"> and manufacturer = #{manufacturer}</if>
+            <if test="manufactureDate != null "> and manufacture_date = #{manufactureDate}</if>
+            <if test="warrantyPeriod != null "> and warranty_period = #{warrantyPeriod}</if>
+            <if test="status != null  and status != ''"> and status = #{status}</if>
+        </where>
+    </select>
+
+    <select id="selectDeviceInfoByDeviceId" parameterType="Long" resultMap="DeviceInfoResult">
+        <include refid="selectDeviceInfoVo"/>
+        where device_id = #{deviceId}
+    </select>
+
+    <insert id="insertDeviceInfo" parameterType="com.zfy.diabetes.domain.DeviceInfo" useGeneratedKeys="true" keyProperty="deviceId">
+        insert into device_info
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="deviceName != null and deviceName != ''">device_name,</if>
+            <if test="serialNumber != null and serialNumber != ''">serial_number,</if>
+            <if test="deviceType != null">device_type,</if>
+            <if test="manufacturer != null">manufacturer,</if>
+            <if test="manufactureDate != null">manufacture_date,</if>
+            <if test="warrantyPeriod != null">warranty_period,</if>
+            <if test="status != null">status,</if>
+            <if test="createTime != null">create_time,</if>
+            <if test="updateTime != null">update_time,</if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="deviceName != null and deviceName != ''">#{deviceName},</if>
+            <if test="serialNumber != null and serialNumber != ''">#{serialNumber},</if>
+            <if test="deviceType != null">#{deviceType},</if>
+            <if test="manufacturer != null">#{manufacturer},</if>
+            <if test="manufactureDate != null">#{manufactureDate},</if>
+            <if test="warrantyPeriod != null">#{warrantyPeriod},</if>
+            <if test="status != null">#{status},</if>
+            <if test="createTime != null">#{createTime},</if>
+            <if test="updateTime != null">#{updateTime},</if>
+        </trim>
+    </insert>
+
+    <update id="updateDeviceInfo" parameterType="com.zfy.diabetes.domain.DeviceInfo">
+        update device_info
+        <trim prefix="SET" suffixOverrides=",">
+            <if test="deviceName != null and deviceName != ''">device_name = #{deviceName},</if>
+            <if test="serialNumber != null and serialNumber != ''">serial_number = #{serialNumber},</if>
+            <if test="deviceType != null">device_type = #{deviceType},</if>
+            <if test="manufacturer != null">manufacturer = #{manufacturer},</if>
+            <if test="manufactureDate != null">manufacture_date = #{manufactureDate},</if>
+            <if test="warrantyPeriod != null">warranty_period = #{warrantyPeriod},</if>
+            <if test="status != null">status = #{status},</if>
+            <if test="createTime != null">create_time = #{createTime},</if>
+            <if test="updateTime != null">update_time = #{updateTime},</if>
+        </trim>
+        where device_id = #{deviceId}
+    </update>
+
+    <delete id="deleteDeviceInfoByDeviceId" parameterType="Long">
+        delete from device_info where device_id = #{deviceId}
+    </delete>
+
+    <delete id="deleteDeviceInfoByDeviceIds" parameterType="String">
+        delete from device_info where device_id in
+        <foreach item="deviceId" collection="array" open="(" separator="," close=")">
+            #{deviceId}
+        </foreach>
+    </delete>
+</mapper>

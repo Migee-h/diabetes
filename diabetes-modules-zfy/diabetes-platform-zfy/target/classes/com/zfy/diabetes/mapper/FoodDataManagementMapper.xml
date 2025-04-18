@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zfy.diabetes.mapper.FoodDataManagementMapper">
+
+    <resultMap type="com.zfy.diabetes.domain.FoodDataManagement" id="FoodDataManagementResult">
+        <result property="foodId"    column="food_id"    />
+        <result property="foodName"    column="food_name"    />
+        <result property="foodImg"    column="food_img"    />
+        <result property="category"    column="category"    />
+        <result property="calories"    column="calories"    />
+        <result property="nutrients"    column="nutrients"    />
+        <result property="composition"    column="composition"    />
+        <result property="createBy"    column="create_by"    />
+        <result property="createTime"    column="create_time"    />
+        <result property="updateTime"    column="update_time"    />
+        <result property="remark"    column="remark"    />
+    </resultMap>
+
+    <sql id="selectFoodDataManagementVo">
+        select food_id, food_name, food_img, category, calories, nutrients, composition, create_by, create_time, update_time, remark from food_data_management
+    </sql>
+
+    <select id="selectFoodDataManagementList" parameterType="com.zfy.diabetes.domain.FoodDataManagement" resultMap="FoodDataManagementResult">
+        <include refid="selectFoodDataManagementVo"/>
+        <where>
+            <if test="foodName != null  and foodName != ''"> and food_name like concat('%', #{foodName}, '%')</if>
+            <if test="foodImg != null  and foodImg != ''"> and food_img = #{foodImg}</if>
+            <if test="category != null  and category != ''"> and category = #{category}</if>
+            <if test="calories != null "> and calories = #{calories}</if>
+            <if test="nutrients != null  and nutrients != ''"> and nutrients = #{nutrients}</if>
+            <if test="composition != null  and composition != ''"> and composition = #{composition}</if>
+        </where>
+    </select>
+
+    <select id="selectFoodDataManagementByFoodId" parameterType="Long" resultMap="FoodDataManagementResult">
+        <include refid="selectFoodDataManagementVo"/>
+        where food_id = #{foodId}
+    </select>
+
+    <insert id="insertFoodDataManagement" parameterType="com.zfy.diabetes.domain.FoodDataManagement" useGeneratedKeys="true" keyProperty="foodId">
+        insert into food_data_management
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="foodName != null and foodName != ''">food_name,</if>
+            <if test="foodImg != null and foodImg != ''">food_img,</if>
+            <if test="category != null and category != ''">category,</if>
+            <if test="calories != null">calories,</if>
+            <if test="nutrients != null">nutrients,</if>
+            <if test="composition != null">composition,</if>
+            <if test="createBy != null and createBy != ''">create_by,</if>
+            <if test="createTime != null">create_time,</if>
+            <if test="updateTime != null">update_time,</if>
+            <if test="remark != null">remark,</if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="foodName != null and foodName != ''">#{foodName},</if>
+            <if test="foodImg != null and foodImg != ''">#{foodImg},</if>
+            <if test="category != null and category != ''">#{category},</if>
+            <if test="calories != null">#{calories},</if>
+            <if test="nutrients != null">#{nutrients},</if>
+            <if test="composition != null">#{composition},</if>
+            <if test="createBy != null and createBy != ''">#{createBy},</if>
+            <if test="createTime != null">#{createTime},</if>
+            <if test="updateTime != null">#{updateTime},</if>
+            <if test="remark != null">#{remark},</if>
+        </trim>
+    </insert>
+
+    <update id="updateFoodDataManagement" parameterType="com.zfy.diabetes.domain.FoodDataManagement">
+        update food_data_management
+        <trim prefix="SET" suffixOverrides=",">
+            <if test="foodName != null and foodName != ''">food_name = #{foodName},</if>
+            <if test="foodImg != null and foodImg != ''">food_img = #{foodImg},</if>
+            <if test="category != null and category != ''">category = #{category},</if>
+            <if test="calories != null">calories = #{calories},</if>
+            <if test="nutrients != null">nutrients = #{nutrients},</if>
+            <if test="composition != null">composition = #{composition},</if>
+            <if test="createBy != null and createBy != ''">create_by = #{createBy},</if>
+            <if test="createTime != null">create_time = #{createTime},</if>
+            <if test="updateTime != null">update_time = #{updateTime},</if>
+            <if test="remark != null">remark = #{remark},</if>
+        </trim>
+        where food_id = #{foodId}
+    </update>
+
+    <delete id="deleteFoodDataManagementByFoodId" parameterType="Long">
+        delete from food_data_management where food_id = #{foodId}
+    </delete>
+
+    <delete id="deleteFoodDataManagementByFoodIds" parameterType="String">
+        delete from food_data_management where food_id in
+        <foreach item="foodId" collection="array" open="(" separator="," close=")">
+            #{foodId}
+        </foreach>
+    </delete>
+</mapper>

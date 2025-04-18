@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zfy.diabetes.mapper.HealthAssessmentMapper">
+
+
+
+    <resultMap type="com.zfy.diabetes.domain.HealthAssessment" id="HealthAssessmentResult">
+        <result property="assessmentId"    column="assessment_id"    />
+        <result property="patientId"    column="patient_id"    />
+        <result property="patientName"    column="patient_name"    />
+        <result property="assessmentDate"    column="assessment_date"    />
+        <result property="assessmentResult"    column="assessment_result"    />
+        <result property="interventionPlan"    column="intervention_plan"    />
+        <result property="createdBy"    column="created_by"    />
+        <result property="createTime"    column="create_time"    />
+    </resultMap>
+
+    <sql id="selectHealthAssessmentVo">
+        select assessment_id, patient_id, patient_name, assessment_date, assessment_result, intervention_plan, created_by, create_time from health_assessment
+    </sql>
+
+    <select id="selectHealthAssessmentList" parameterType="com.zfy.diabetes.domain.HealthAssessment" resultMap="HealthAssessmentResult">
+        <include refid="selectHealthAssessmentVo"/>
+        <where>
+            <if test="patientId != null "> and patient_id = #{patientId}</if>
+            <if test="patientName != null  and patientName != ''"> and patient_name like concat('%', #{patientName}, '%')</if>
+            <if test="assessmentDate != null "> and assessment_date = #{assessmentDate}</if>
+            <if test="assessmentResult != null  and assessmentResult != ''"> and assessment_result = #{assessmentResult}</if>
+            <if test="interventionPlan != null  and interventionPlan != ''"> and intervention_plan = #{interventionPlan}</if>
+            <if test="createdBy != null  and createdBy != ''"> and created_by = #{createdBy}</if>
+        </where>
+    </select>
+
+    <select id="selectHealthAssessmentByAssessmentId" parameterType="Long" resultMap="HealthAssessmentResult">
+        <include refid="selectHealthAssessmentVo"/>
+        where assessment_id = #{assessmentId}
+    </select>
+
+    <insert id="insertHealthAssessment" parameterType="com.zfy.diabetes.domain.HealthAssessment" useGeneratedKeys="true" keyProperty="assessmentId">
+        insert into health_assessment
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="patientId != null">patient_id,</if>
+            <if test="patientName != null">patient_name,</if>
+            <if test="assessmentDate != null">assessment_date,</if>
+            <if test="assessmentResult != null">assessment_result,</if>
+            <if test="interventionPlan != null">intervention_plan,</if>
+            <if test="createdBy != null and createdBy != ''">created_by,</if>
+            <if test="createTime != null">create_time,</if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="patientId != null">#{patientId},</if>
+            <if test="patientName != null">#{patientName},</if>
+            <if test="assessmentDate != null">#{assessmentDate},</if>
+            <if test="assessmentResult != null">#{assessmentResult},</if>
+            <if test="interventionPlan != null">#{interventionPlan},</if>
+            <if test="createdBy != null and createdBy != ''">#{createdBy},</if>
+            <if test="createTime != null">#{createTime},</if>
+        </trim>
+    </insert>
+
+    <update id="updateHealthAssessment" parameterType="com.zfy.diabetes.domain.HealthAssessment">
+        update health_assessment
+        <trim prefix="SET" suffixOverrides=",">
+            <if test="patientId != null">patient_id = #{patientId},</if>
+            <if test="patientName != null">patient_name = #{patientName},</if>
+            <if test="assessmentDate != null">assessment_date = #{assessmentDate},</if>
+            <if test="assessmentResult != null">assessment_result = #{assessmentResult},</if>
+            <if test="interventionPlan != null">intervention_plan = #{interventionPlan},</if>
+            <if test="createdBy != null and createdBy != ''">created_by = #{createdBy},</if>
+            <if test="createTime != null">create_time = #{createTime},</if>
+        </trim>
+        where assessment_id = #{assessmentId}
+    </update>
+
+    <delete id="deleteHealthAssessmentByAssessmentId" parameterType="Long">
+        delete from health_assessment where assessment_id = #{assessmentId}
+    </delete>
+
+    <delete id="deleteHealthAssessmentByAssessmentIds" parameterType="String">
+        delete from health_assessment where assessment_id in
+        <foreach item="assessmentId" collection="array" open="(" separator="," close=")">
+            #{assessmentId}
+        </foreach>
+    </delete>
+</mapper>

@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zfy.diabetes.mapper.PatientMapper">
+
+
+    <resultMap type="com.zfy.diabetes.domain.Patient" id="PatientResult">
+        <result property="patientId"    column="patient_id"    />
+        <result property="patientName"    column="patient_name"    />
+        <result property="deviceId"    column="device_id"    />
+        <result property="patientSex"    column="patient_sex"    />
+        <result property="patientNum"    column="patient_num"    />
+        <result property="patientBirthday"    column="patient_birthday"    />
+        <result property="patientAge"    column="patient_age"    />
+        <result property="patientPhone"    column="patient_phone"    />
+        <result property="patientEmail"    column="patient_email"    />
+        <result property="patientHeight"    column="patient_height"    />
+        <result property="patientWeight"    column="patient_weight"    />
+        <result property="patientBim"    column="patient_bim"    />
+        <result property="patientStatus"    column="patient_status"    />
+        <result property="disease"    column="disease"    />
+        <result property="allergy"    column="allergy"    />
+        <result property="province"    column="province"    />
+        <result property="city"    column="city"    />
+        <result property="county"    column="county"    />
+        <result property="address"    column="address"    />
+        <result property="clinicTime"    column="clinic_time"    />
+        <result property="createTime"    column="create_time"    />
+        <result property="updateTime"    column="update_time"    />
+        <result property="op"    column="op"    />
+        <result property="userId"    column="user_id"    />
+        <result property="userName"    column="user_name"    />
+        <result property="deptId"    column="dept_id"    />
+        <result property="delFlag"    column="del_flag"    />
+        <result property="pinyin"    column="pinyin"    />
+        <result property="medicalHistory"    column="medical_history"    />
+        <result property="nation"    column="nation"    />
+        <result property="occupation"    column="occupation"    />
+    </resultMap>
+
+    <sql id="selectPatientVo">
+        select patient_id, patient_name, device_id, patient_sex, patient_num, patient_birthday, patient_age, patient_phone, patient_email, patient_height, patient_weight, patient_bim, patient_status, disease, allergy, province, city, county, address, clinic_time, create_time, update_time, op, user_id, user_name, dept_id, del_flag, pinyin, medical_history, nation, occupation from patient
+    </sql>
+
+    <select id="selectPatientList" parameterType="com.zfy.diabetes.domain.Patient" resultMap="PatientResult">
+        <include refid="selectPatientVo"/>
+        <where>
+            and del_flag = '0'
+            <if test="patientName != null  and patientName != ''"> and patient_name like concat('%', #{patientName}, '%')</if>
+            <if test="patientSex != null  and patientSex != ''"> and patient_sex = #{patientSex}</if>
+            <if test="patientNum != null  and patientNum != ''"> and patient_num = #{patientNum}</if>
+            <if test="patientBirthday != null "> and patient_birthday = #{patientBirthday}</if>
+            <if test="patientAge != null  and patientAge != ''"> and patient_age = #{patientAge}</if>
+            <if test="patientPhone != null  and patientPhone != ''"> and patient_phone = #{patientPhone}</if>
+            <if test="patientEmail != null  and patientEmail != ''"> and patient_email = #{patientEmail}</if>
+            <if test="patientHeight != null "> and patient_height = #{patientHeight}</if>
+            <if test="patientWeight != null "> and patient_weight = #{patientWeight}</if>
+            <if test="patientBim != null "> and patient_bim = #{patientBim}</if>
+            <if test="patientStatus != null  and patientStatus != ''"> and patient_status = #{patientStatus}</if>
+            <if test="disease != null  and disease != ''"> and disease = #{disease}</if>
+            <if test="allergy != null  and allergy != ''"> and allergy = #{allergy}</if>
+            <if test="province != null  and province != ''"> and province = #{province}</if>
+            <if test="city != null  and city != ''"> and city = #{city}</if>
+            <if test="county != null  and county != ''"> and county = #{county}</if>
+            <if test="address != null  and address != ''"> and address = #{address}</if>
+            <if test="clinicTime != null "> and clinic_time = #{clinicTime}</if>
+            <if test="op != null  and op != ''"> and op = #{op}</if>
+            <if test="userId != null "> and user_id = #{userId}</if>
+            <if test="userName != null  and userName != ''"> and user_name like concat('%', #{userName}, '%')</if>
+            <if test="deptId != null "> and dept_id = #{deptId}</if>
+            <if test="pinyin != null  and pinyin != ''"> and pinyin = #{pinyin}</if>
+            <if test="medicalHistory != null  and medicalHistory != ''"> and medical_history = #{medicalHistory}</if>
+            <if test="nation != null  and nation != ''"> and nation = #{nation}</if>
+            <if test="occupation != null  and occupation != ''"> and occupation = #{occupation}</if>
+        </where>
+    </select>
+
+    <select id="selectPatientByPatientId" parameterType="Long" resultMap="PatientResult">
+        <include refid="selectPatientVo"/>
+        where patient_id = #{patientId}
+    </select>
+
+    <insert id="insertPatient" parameterType="com.zfy.diabetes.domain.Patient" useGeneratedKeys="true" keyProperty="patientId">
+        insert into patient
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="patientName != null and patientName != ''">patient_name,</if>
+            <if test="deviceId != null">device_id,</if>
+            <if test="patientSex != null">patient_sex,</if>
+            <if test="patientNum != null">patient_num,</if>
+            <if test="patientBirthday != null">patient_birthday,</if>
+            <if test="patientAge != null">patient_age,</if>
+            <if test="patientPhone != null">patient_phone,</if>
+            <if test="patientEmail != null">patient_email,</if>
+            <if test="patientHeight != null">patient_height,</if>
+            <if test="patientWeight != null">patient_weight,</if>
+            <if test="patientBim != null">patient_bim,</if>
+            <if test="patientStatus != null">patient_status,</if>
+            <if test="disease != null">disease,</if>
+            <if test="allergy != null">allergy,</if>
+            <if test="province != null">province,</if>
+            <if test="city != null">city,</if>
+            <if test="county != null">county,</if>
+            <if test="address != null">address,</if>
+            <if test="clinicTime != null">clinic_time,</if>
+            <if test="createTime != null">create_time,</if>
+            <if test="updateTime != null">update_time,</if>
+            <if test="op != null">op,</if>
+            <if test="userId != null">user_id,</if>
+            <if test="userName != null">user_name,</if>
+            <if test="deptId != null">dept_id,</if>
+            <if test="delFlag != null">del_flag,</if>
+            <if test="pinyin != null">pinyin,</if>
+            <if test="medicalHistory != null">medical_history,</if>
+            <if test="nation != null">nation,</if>
+            <if test="occupation != null">occupation,</if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="patientName != null and patientName != ''">#{patientName},</if>
+            <if test="deviceId != null">#{deviceId},</if>
+            <if test="patientSex != null">#{patientSex},</if>
+            <if test="patientNum != null">#{patientNum},</if>
+            <if test="patientBirthday != null">#{patientBirthday},</if>
+            <if test="patientAge != null">#{patientAge},</if>
+            <if test="patientPhone != null">#{patientPhone},</if>
+            <if test="patientEmail != null">#{patientEmail},</if>
+            <if test="patientHeight != null">#{patientHeight},</if>
+            <if test="patientWeight != null">#{patientWeight},</if>
+            <if test="patientBim != null">#{patientBim},</if>
+            <if test="patientStatus != null">#{patientStatus},</if>
+            <if test="disease != null">#{disease},</if>
+            <if test="allergy != null">#{allergy},</if>
+            <if test="province != null">#{province},</if>
+            <if test="city != null">#{city},</if>
+            <if test="county != null">#{county},</if>
+            <if test="address != null">#{address},</if>
+            <if test="clinicTime != null">#{clinicTime},</if>
+            <if test="createTime != null">#{createTime},</if>
+            <if test="updateTime != null">#{updateTime},</if>
+            <if test="op != null">#{op},</if>
+            <if test="userId != null">#{userId},</if>
+            <if test="userName != null">#{userName},</if>
+            <if test="deptId != null">#{deptId},</if>
+            <if test="delFlag != null">#{delFlag},</if>
+            <if test="pinyin != null">#{pinyin},</if>
+            <if test="medicalHistory != null">#{medicalHistory},</if>
+            <if test="nation != null">#{nation},</if>
+            <if test="occupation != null">#{occupation},</if>
+        </trim>
+    </insert>
+
+    <update id="updatePatient" parameterType="com.zfy.diabetes.domain.Patient">
+        update patient
+        <trim prefix="SET" suffixOverrides=",">
+            <if test="patientName != null and patientName != ''">patient_name = #{patientName},</if>
+            <if test="deviceId != null">device_id = #{deviceId},</if>
+            <if test="patientSex != null">patient_sex = #{patientSex},</if>
+            <if test="patientNum != null">patient_num = #{patientNum},</if>
+            <if test="patientBirthday != null">patient_birthday = #{patientBirthday},</if>
+            <if test="patientAge != null">patient_age = #{patientAge},</if>
+            <if test="patientPhone != null">patient_phone = #{patientPhone},</if>
+            <if test="patientEmail != null">patient_email = #{patientEmail},</if>
+            <if test="patientHeight != null">patient_height = #{patientHeight},</if>
+            <if test="patientWeight != null">patient_weight = #{patientWeight},</if>
+            <if test="patientBim != null">patient_bim = #{patientBim},</if>
+            <if test="patientStatus != null">patient_status = #{patientStatus},</if>
+            <if test="disease != null">disease = #{disease},</if>
+            <if test="allergy != null">allergy = #{allergy},</if>
+            <if test="province != null">province = #{province},</if>
+            <if test="city != null">city = #{city},</if>
+            <if test="county != null">county = #{county},</if>
+            <if test="address != null">address = #{address},</if>
+            <if test="clinicTime != null">clinic_time = #{clinicTime},</if>
+            <if test="createTime != null">create_time = #{createTime},</if>
+            <if test="updateTime != null">update_time = #{updateTime},</if>
+            <if test="op != null">op = #{op},</if>
+            <if test="userId != null">user_id = #{userId},</if>
+            <if test="userName != null">user_name = #{userName},</if>
+            <if test="deptId != null">dept_id = #{deptId},</if>
+            <if test="delFlag != null">del_flag = #{delFlag},</if>
+            <if test="pinyin != null">pinyin = #{pinyin},</if>
+            <if test="medicalHistory != null">medical_history = #{medicalHistory},</if>
+            <if test="nation != null">nation = #{nation},</if>
+            <if test="occupation != null">occupation = #{occupation},</if>
+        </trim>
+        where patient_id = #{patientId}
+    </update>
+
+    <delete id="deletePatientByPatientId" parameterType="Long">
+        update patient set del_flag = 1 where patient_id = #{patientId}
+    </delete>
+
+    <delete id="deletePatientByPatientIds" parameterType="String">
+       update patient set del_flag = 1 where patient_id in
+        <foreach collection="array" item="patientId" open="(" separator="," close=")">
+            #{patientId}
+        </foreach>
+    </delete>
+</mapper>

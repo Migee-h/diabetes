@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="diabetes-common-log-zfy" />
+        <module name="diabetes-visual-monitor-zfy" />
+        <module name="diabetes-auth-zfy" />
+        <module name="diabetes-common-datasource-zfy" />
+        <module name="diabetes-gateway-zfy" />
+        <module name="diabetes-platform-zfy" />
+        <module name="diabetes-api-system-zfy" />
+        <module name="diabetes-common-sensitive-zfy" />
+        <module name="diabetes-common-core-zfy" />
+        <module name="diabetes-common-swagger-zfy" />
+        <module name="diabetes-common-seata-zfy" />
+        <module name="diabetes-modules-system-zfy" />
+        <module name="diabetes-modules-file-zfy" />
+        <module name="diabetes-modules-gen-zfy" />
+        <module name="diabetes-common-redis-zfy" />
+        <module name="diabetes-common-security-zfy" />
+        <module name="diabetes-common-datascope-zfy" />
+        <module name="diabetes-modules-job-zfy" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>

@@ -1,0 +1,10 @@
+11:07:23.115 [reactor-http-nio-3] ERROR c.r.g.h.GatewayExceptionHandler - [handle,52] - [网关异常处理]请求路径:/doctor/management/list,异常信息:404 NOT_FOUND
+11:16:52.455 [reactor-http-nio-4] ERROR c.r.g.h.GatewayExceptionHandler - [handle,52] - [网关异常处理]请求路径:/doctor/management/list,异常信息:404 NOT_FOUND
+11:16:55.428 [reactor-http-nio-8] ERROR c.r.g.h.GatewayExceptionHandler - [handle,52] - [网关异常处理]请求路径:/doctor/management/list,异常信息:404 NOT_FOUND
+11:20:48.516 [reactor-http-nio-9] ERROR c.r.g.h.GatewayExceptionHandler - [handle,52] - [网关异常处理]请求路径:/doctor/management/list,异常信息:404 NOT_FOUND
+11:22:15.187 [reactor-http-nio-10] ERROR c.r.g.h.GatewayExceptionHandler - [handle,52] - [网关异常处理]请求路径:/doctor/management/list,异常信息:404 NOT_FOUND
+12:17:54.159 [reactor-http-nio-2] ERROR c.r.g.h.GatewayExceptionHandler - [handle,52] - [网关异常处理]请求路径:/doctor/management/list,异常信息:404 NOT_FOUND
+12:22:51.621 [reactor-http-nio-12] ERROR c.r.g.h.GatewayExceptionHandler - [handle,52] - [网关异常处理]请求路径:/doctor/management/list,异常信息:404 NOT_FOUND
+12:23:19.490 [reactor-http-nio-3] ERROR c.r.g.h.GatewayExceptionHandler - [handle,52] - [网关异常处理]请求路径:/doctor/management/list,异常信息:404 NOT_FOUND
+13:44:43.664 [reactor-http-nio-5] ERROR c.r.g.h.GatewayExceptionHandler - [handle,52] - [网关异常处理]请求路径:/doctor/management/list,异常信息:404 NOT_FOUND
+19:05:59.619 [reactor-http-nio-7] ERROR c.r.g.h.GatewayExceptionHandler - [handle,52] - [网关异常处理]请求路径:/health/assessment/list,异常信息:404 NOT_FOUND

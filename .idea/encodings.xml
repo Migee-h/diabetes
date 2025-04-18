@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/diabetes-api-zfy/diabetes-api-system-zfy/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/diabetes-api-zfy/diabetes-api-system-zfy/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/diabetes-api-zfy/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/diabetes-api-zfy/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/diabetes-auth-zfy/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/diabetes-auth-zfy/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/diabetes-common-zfy/diabetes-common-core-zfy/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/diabetes-common-zfy/diabetes-common-core-zfy/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/diabetes-common-zfy/diabetes-common-datascope-zfy/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/diabetes-common-zfy/diabetes-common-datascope-zfy/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/diabetes-common-zfy/diabetes-common-datasource-zfy/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/diabetes-common-zfy/diabetes-common-datasource-zfy/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/diabetes-common-zfy/diabetes-common-log-zfy/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/diabetes-common-zfy/diabetes-common-log-zfy/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/diabetes-common-zfy/diabetes-common-redis-zfy/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/diabetes-common-zfy/diabetes-common-redis-zfy/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/diabetes-common-zfy/diabetes-common-seata-zfy/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/diabetes-common-zfy/diabetes-common-seata-zfy/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/diabetes-common-zfy/diabetes-common-security-zfy/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/diabetes-common-zfy/diabetes-common-security-zfy/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/diabetes-common-zfy/diabetes-common-sensitive-zfy/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/diabetes-common-zfy/diabetes-common-sensitive-zfy/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/diabetes-common-zfy/diabetes-common-swagger-zfy/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/diabetes-common-zfy/diabetes-common-swagger-zfy/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/diabetes-common-zfy/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/diabetes-common-zfy/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/diabetes-gateway-zfy/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/diabetes-gateway-zfy/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/diabetes-modules-zfy/diabetes-file-zfy/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/diabetes-modules-zfy/diabetes-file-zfy/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/diabetes-modules-zfy/diabetes-gen-zfy/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/diabetes-modules-zfy/diabetes-gen-zfy/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/diabetes-modules-zfy/diabetes-job-zfy/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/diabetes-modules-zfy/diabetes-job-zfy/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/diabetes-modules-zfy/diabetes-platform-zfy/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/diabetes-modules-zfy/diabetes-platform-zfy/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/diabetes-modules-zfy/diabetes-system-zfy/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/diabetes-modules-zfy/diabetes-system-zfy/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/diabetes-modules-zfy/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/diabetes-modules-zfy/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/diabetes-platform-zfy/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/diabetes-platform-zfy/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/diabetes-visual-zfy/diabetes-monitor-zfy/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/diabetes-visual-zfy/diabetes-monitor-zfy/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/diabetes-visual-zfy/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/diabetes-visual-zfy/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
+  </component>
+</project>
