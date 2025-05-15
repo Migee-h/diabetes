@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zfy.diabetes.mapper.EducationalResourcesMapper">
+
+    <resultMap type="com.zfy.diabetes.domain.EducationalResources" id="EducationalResourcesResult">
+        <result property="resourceId"    column="resource_id"    />
+        <result property="title"    column="title"    />
+        <result property="category"    column="category"    />
+        <result property="content"    column="content"    />
+        <result property="author"    column="author"    />
+        <result property="publishDate"    column="publish_date"    />
+        <result property="imageUrl"    column="image_url"    />
+        <result property="viewCount"    column="view_count"    />
+        <result property="createTime"    column="create_time"    />
+        <result property="updateTime"    column="update_time"    />
+    </resultMap>
+
+    <sql id="selectEducationalResourcesVo">
+        select resource_id, title, category, content, author, publish_date, image_url, view_count, create_time, update_time from educational_resources
+    </sql>
+
+    <select id="selectEducationalResourcesList" parameterType="com.zfy.diabetes.domain.EducationalResources" resultMap="EducationalResourcesResult">
+        <include refid="selectEducationalResourcesVo"/>
+        <where>
+            <if test="title != null  and title != ''"> and title like concat('%',#{title},'%') or category like concat('%',#{title},'%') or content like concat('%',#{title},'%') or author like concat('%',#{title},'%')</if>
+            <if test="category != null  and category != ''"> and category = #{category}</if>
+            <if test="content != null  and content != ''"> and content = #{content}</if>
+            <if test="author != null  and author != ''"> and author = #{author}</if>
+            <if test="publishDate != null "> and publish_date = #{publishDate}</if>
+            <if test="imageUrl != null  and imageUrl != ''"> and image_url = #{imageUrl}</if>
+            <if test="viewCount != null "> and view_count = #{viewCount}</if>
+        </where>
+    </select>
+
+    <select id="selectEducationalResourcesByResourceId" parameterType="Long" resultMap="EducationalResourcesResult">
+        <include refid="selectEducationalResourcesVo"/>
+        where resource_id = #{resourceId}
+    </select>
+
+    <insert id="insertEducationalResources" parameterType="com.zfy.diabetes.domain.EducationalResources" useGeneratedKeys="true" keyProperty="resourceId">
+        insert into educational_resources
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="title != null and title != ''">title,</if>
+            <if test="category != null and category != ''">category,</if>
+            <if test="content != null and content != ''">content,</if>
+            <if test="author != null">author,</if>
+            <if test="publishDate != null">publish_date,</if>
+            <if test="imageUrl != null">image_url,</if>
+            <if test="viewCount != null">view_count,</if>
+            <if test="createTime != null">create_time,</if>
+            <if test="updateTime != null">update_time,</if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="title != null and title != ''">#{title},</if>
+            <if test="category != null and category != ''">#{category},</if>
+            <if test="content != null and content != ''">#{content},</if>
+            <if test="author != null">#{author},</if>
+            <if test="publishDate != null">#{publishDate},</if>
+            <if test="imageUrl != null">#{imageUrl},</if>
+            <if test="viewCount != null">#{viewCount},</if>
+            <if test="createTime != null">#{createTime},</if>
+            <if test="updateTime != null">#{updateTime},</if>
+        </trim>
+    </insert>
+
+    <update id="updateEducationalResources" parameterType="com.zfy.diabetes.domain.EducationalResources">
+        update educational_resources
+        <trim prefix="SET" suffixOverrides=",">
+            <if test="title != null and title != ''">title = #{title},</if>
+            <if test="category != null and category != ''">category = #{category},</if>
+            <if test="content != null and content != ''">content = #{content},</if>
+            <if test="author != null">author = #{author},</if>
+            <if test="publishDate != null">publish_date = #{publishDate},</if>
+            <if test="imageUrl != null">image_url = #{imageUrl},</if>
+            <if test="viewCount != null">view_count = #{viewCount},</if>
+            <if test="createTime != null">create_time = #{createTime},</if>
+            <if test="updateTime != null">update_time = #{updateTime},</if>
+        </trim>
+        where resource_id = #{resourceId}
+    </update>
+
+    <delete id="deleteEducationalResourcesByResourceId" parameterType="Long">
+        delete from educational_resources where resource_id = #{resourceId}
+    </delete>
+
+    <delete id="deleteEducationalResourcesByResourceIds" parameterType="String">
+        delete from educational_resources where resource_id in
+        <foreach item="resourceId" collection="array" open="(" separator="," close=")">
+            #{resourceId}
+        </foreach>
+    </delete>
+
+</mapper>

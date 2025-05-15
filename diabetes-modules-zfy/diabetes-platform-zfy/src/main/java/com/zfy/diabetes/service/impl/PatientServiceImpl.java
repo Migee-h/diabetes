@@ -1,5 +1,6 @@
 package com.zfy.diabetes.service.impl;
 
+import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.ruoyi.common.core.utils.DateUtils;
 import com.zfy.diabetes.domain.DeviceInfo;
@@ -73,7 +74,8 @@ public class PatientServiceImpl extends ServiceImpl<PatientMapper, Patient>
         }
 
         patient.setCreateTime(DateUtils.getNowDate());
-        return patientMapper.insertPatient(patient);
+        int i = patientMapper.insertPatient(patient);
+        return Math.toIntExact(patient.getDeviceId());
     }
 
     private void validatePatient(Patient patient) {
@@ -130,6 +132,15 @@ public class PatientServiceImpl extends ServiceImpl<PatientMapper, Patient>
     public int deletePatientByPatientId(Long patientId)
     {
         return patientMapper.deletePatientByPatientId(patientId);
+    }
+
+    @Override
+    public Patient selectPatientByPatientName(String patientName) {
+        List<Patient> patients = patientMapper.selectList(new LambdaQueryWrapper<Patient>().eq(Patient::getPatientName, patientName));
+        if (!patients.isEmpty()){
+            return patients.get(0);
+        }
+        return null;
     }
 
 }

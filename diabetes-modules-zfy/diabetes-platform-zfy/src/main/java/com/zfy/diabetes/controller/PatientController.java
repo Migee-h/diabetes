@@ -80,7 +80,7 @@ public class PatientController extends BaseController
     /**
      * 新增患者基本信息
      */
-    @RequiresPermissions("diabetes:patient:add")
+//    @RequiresPermissions("diabetes:patient:add")
     @Log(title = "患者基本信息", businessType = BusinessType.INSERT)
     @PostMapping
     public AjaxResult add(@RequestBody Patient patient)

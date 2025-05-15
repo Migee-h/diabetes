@@ -21,7 +21,7 @@ import com.ruoyi.system.api.model.LoginUser;
 
 /**
  * 登录校验方法
- * 
+ *
  * @author ruoyi
  */
 @Component
@@ -143,6 +143,7 @@ public class SysLoginService
         SysUser sysUser = new SysUser();
         sysUser.setUserName(username);
         sysUser.setNickName(username);
+        sysUser.setDeptId(Constants.DEPT_ID);
         sysUser.setPassword(SecurityUtils.encryptPassword(password));
         R<?> registerResult = remoteUserService.registerUserInfo(sysUser, SecurityConstants.INNER);
 

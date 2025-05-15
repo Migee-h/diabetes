@@ -60,4 +60,5 @@ public interface PatientService extends IService<Patient> {
      */
     public int deletePatientByPatientId(Long patientId);
 
+    Patient selectPatientByPatientName(String patientName);
 }

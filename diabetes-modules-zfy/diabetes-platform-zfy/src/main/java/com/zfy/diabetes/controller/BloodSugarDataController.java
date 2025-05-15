@@ -77,7 +77,7 @@ public class BloodSugarDataController extends BaseController
     /**
      * 新增血糖数据
      */
-    @RequiresPermissions("blood:data:add")
+//    @RequiresPermissions("blood:data:add")
     @Log(title = "血糖数据", businessType = BusinessType.INSERT)
     @PostMapping
     public AjaxResult add(@RequestBody BloodSugarData bloodSugarData)

@@ -2,7 +2,7 @@ package com.ruoyi.common.core.constant;
 
 /**
  * 通用常量信息
- * 
+ *
  * @author ruoyi
  */
 public class Constants
@@ -132,4 +132,5 @@ public class Constants
      */
     public static final String[] JOB_ERROR_STR = { "java.net.URL", "javax.naming.InitialContext", "org.yaml.snakeyaml",
             "org.springframework", "org.apache", "com.ruoyi.common.core.utils.file" };
+    public static final Long DEPT_ID = 201L;
 }
